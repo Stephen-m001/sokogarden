@@ -28,11 +28,12 @@ const Signup = () => {
     formdata.append("phone", phone)
 
     try {
-      const response = await axios.post("http://higgs.alwaysdata.net/api/signup", formdata)
+      const response = await axios.post("http://murayambuni.alwaysdata.net/api/signup", formdata)
       setSuccess(response.data.message)
       setLoading("")
     } catch (error) {
-      
+      setError(error.message)
+      setLoading("")
     }
 
 
@@ -56,8 +57,8 @@ const Signup = () => {
           <input type="email" className="form-control" placeholder='Enter email' onChange={(e) =>setEmail(e.target.value)} /><br />
           <input type="password" className="form-control" placeholder='Enter password' onChange={(e) => setPassword(e.target.value)}/><br />
           <input type="tel" className="form-control" placeholder='Enter phone' onChange={(e) => setPhone(e.target.value)}/><br />
-          <button className='btn btn-primary w-100 ' type='submit'>Sign Up</button><br /><br />
-          <p>Already have an account? <Link to ="/signin">Signin</Link> </p>
+          <button className='btn btn-success w-100 ' type='submit'>Sign Up</button><br /><br />
+          <p>Already have an account? <Link to ="/signin" className='text-success'>Signin</Link> </p>
         </form>
 
       </div>

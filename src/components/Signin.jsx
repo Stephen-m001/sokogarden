@@ -15,9 +15,9 @@ const [error, setError] = useState ("")
 
 // function to sign un user
 const handlesubmit = async (e) =>{
-    e.preventDefault() 
-
+    e.preventDefault()
     setLoading("Please Wait...")
+    
 
     // create digital envelope to input data
     const formdata= new FormData()
@@ -25,12 +25,13 @@ const handlesubmit = async (e) =>{
     formdata.append("password", password)
 
     try {
-      const response= await axios.post("http://higgs.alwaysdata.net/api/signin", formdata)
+      const response= await axios.post("http://murayambuni.alwaysdata.net/api/signin", formdata)
       
       setSuccess(response.data.message)
       setLoading("")
     } catch (error) {
-      
+      setError(error.message)
+      setLoading("")
     }
 
 }
@@ -46,8 +47,8 @@ const handlesubmit = async (e) =>{
         <form action="" onSubmit={handlesubmit}>
           <input type="email" className="form-control"    placeholder='Enter email'    onChange={(e) => setEmail(e.target.value)}/><br />
           <input type="password" className="form-control" placeholder='Enter password' onChange={(e) => setPassword(e.target.value)}/><br />
-          <button className='btn btn-primary w-100' type="submit">Sign In</button><br /><br />
-          <p>Don't have an account?<Link to ="/signup">Sign Up</Link> </p>
+          <button className='btn btn-success w-100' type="submit">Sign In</button><br /><br />
+          <p>Don't have an account?<Link to ="/signup" className='text-success'>Sign Up</Link> </p>
         </form>
       </div>
 

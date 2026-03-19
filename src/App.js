@@ -7,19 +7,22 @@ import Signin from './components/Signin';
 import Addproduct from './components/Addproduct';
 import Getproduct from './components/Getproduct';
 import Mpesapayment from './components/Mpesapayment';
+import Navbar from './components/Navbar';
 function App() {
   return (
     <BrowserRouter>   
         <div className="App">
+          {/* navbar goes here  */}
+           <Navbar /> 
       <header className="App-header">
-       <h1 className='text-dark'>Welcome to soko garden</h1>       
+       <h1  style={{color:"#39FF14"}}>Welcome To Zuri Gaming</h1>       
       </header>
-      <nav>
-        <Link to="/" className='btn btn-success text-dark m-1' >Get products</Link>
-        <Link to="/signup" className='btn btn-success text-dark m-1'>Signup</Link>
-        <Link to="/signin" className='btn btn-success text-dark m-1'>Signin</Link>
-        <Link to="/addproduct" className='btn btn-success text-dark m-1'>Addproduct</Link>
-      </nav>
+      {/* <nav>
+        <Link to="/" className='btn  text-dark m-1' style={{backgroundColor: "#00FF7F"}}>Get products</Link>
+        <Link to="/signup" className='btn  text-dark m-1' style={{backgroundColor: "#00FF7F"}}>Signup</Link>
+        <Link to="/signin" className='btn  text-dark m-1' style={{backgroundColor: "#00FF7F"}}>Signin</Link>
+        <Link to="/addproduct" className='btn  text-dark m-1' style={{backgroundColor: "#00FF7F"}}>Addproduct</Link>
+      </nav> */}
       <Routes>
         <Route path='/' element={<Getproduct />} />
         <Route path='/signup' element={<Signup />} />

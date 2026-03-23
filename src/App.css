@@ -1,5 +1,5 @@
 .App {
-  background-color: #121212;
+  background-color: black;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
 }
@@ -37,4 +37,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.02); /* Lifts and slightly zooms */
+  box-shadow: 0 10px 20px ; /* Deepens the shadow */
 }

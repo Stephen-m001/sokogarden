@@ -36,8 +36,8 @@ const handlesubmit = async (e) =>{
 
 }
   return (
-    <div className='row justify-content-center mt-2' >
-      <div className='card shadow p-4 col-md-6'>
+    <div className='row justify-content-center mt-1 ' >
+      <div className='card shadow p-4 col-md-6  '>
         <h1>Sign In</h1>
         {/* bind the states */}
         <h2 className="text-warning">{loading}</h2>

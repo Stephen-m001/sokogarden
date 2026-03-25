@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-
+import { FaFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Signup from './components/Signup';
 import Signin from './components/Signin';
@@ -11,6 +11,7 @@ import Getproduct from './components/Getproduct';
 import Mpesapayment from './components/Mpesapayment';
 import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
+import Addfooter from './components/footer';
 function App() {
   return (
     <BrowserRouter>   
@@ -37,8 +38,10 @@ function App() {
         
       </Routes>
     </div>
+    
     </BrowserRouter>
   );
+   
 }
 
 export default App;

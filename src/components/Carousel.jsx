@@ -14,16 +14,11 @@ const Carousel = () => {
         {/* Slide 1 */}
         <div className="carousel-item active">
           <img
-            src="images/game3.jpeg"
+            src="images/gc1.png"
             alt="slide1"
-            style={{ width: "100%", height: "600px" }}
+            style={{height:"300px",objectFit:"contain" }}
           />
-          <div className="carousel-caption text-success">
-            <h5>Rooms</h5>
-            <p>
-              Unwind in a calm and comfortable space designed to give you a peaceful night’s rest.
-            </p>
-          </div>
+          
         </div>
 
         {/* Slide 2 */}
@@ -33,12 +28,7 @@ const Carousel = () => {
             alt="slide2"
             // style={{ width: "100%", height: "600px" }}
           />
-          <div className="carousel-caption text-success">
-            <h5>Foods</h5>
-            <p>
-              A signature dish created daily by our chef, inspired by seasonal ingredients and customer favorites.
-            </p>
-          </div>
+         
         </div>
 
         {/* Slide 3 */}
@@ -46,44 +36,29 @@ const Carousel = () => {
           <img
             src="images/game3.jpeg"
             alt="slide3"
-            style={{ width: "100%", height: "600px" }}
+           style={{height:"300px",objectFit:"contain" }}
           />
-          <div className="carousel-caption text-success">
-            <h5>Gym</h5>
-            <p>
-              Stay energized with access to our fitness facilities designed for comfort and convenience.
-            </p>
-          </div>
+          
         </div>
 
         {/* Slide 4 */}
         <div className="carousel-item">
           <img
-            src="images/cr4.jpg"
+            src="images/gc2.png"
             alt="slide4"
-            style={{ width: "100%", height: "600px" }}
+            style={{height:"300px",objectFit:"contain" }}
           />
-          <div className="carousel-caption text-success">
-            <h5>Pools</h5>
-            <p>
-              Take a refreshing swim in our well-maintained pool, suitable for both leisure and exercise.
-            </p>
-          </div>
+          
         </div>
 
         {/* Slide 5 */}
         <div className="carousel-item">
           <img
-            src="images/m4.jfif"
+            src="images/game6.jpeg"
             alt="slide5"
-            style={{ width: "100%", height: "600px" }}
+            style={{height:"300px",objectFit:"contain" }}
           />
-          <div className="carousel-caption text-success">
-            <h5>Movie Night</h5>
-            <p>
-              Join us for live music nights, themed events, and relaxing evening entertainment.
-            </p>
-          </div>
+          dit
         </div>
 
       </div>

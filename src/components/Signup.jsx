@@ -44,7 +44,7 @@ const Signup = () => {
   }
   
   return (
-    <div className='row mt-1 justify-content-center' >
+    <div className='row  justify-content-center mt-1' >
       <div className='col-md-6 card shadow' >
         <h1>Signup</h1>
         {/* bind the states */}

@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, {useEffect, useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import Carousel from './Carousel'
+import Addfooter from './footer'
 
 
 const Getproduct = () => {
@@ -57,7 +58,9 @@ const Getproduct = () => {
           </div>
           </div>
         </div>
+        
        ))}
+       <Addfooter /> 
     </div>
   )
 }
